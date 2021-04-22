@@ -1,11 +1,13 @@
 # Create a program to sort a list
-# Bonus: Use a function to check if the list is sorted
 # Sample Input/Output :-
+
 # I: [1, 2, 5, 3, 10, 4]
 # O: [1, 2, 3, 4, 5, 10]
 
 
 def check_sort(_list):
+	'''Function to check if a list is sorted.
+	 Returns True or False'''
 	_list = list(_list)
 	k = 0
 	length = len(_list)
