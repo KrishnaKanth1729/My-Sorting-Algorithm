@@ -32,14 +32,14 @@ def sort(_list):
 	list_change = [[]]
 	count = 0
 	if res == True:
-		return f"list is already sorted!"
+		return f"{_list} is already sorted!"
 	
 	else:
 			size = len(_list)
 			running = True
 			while running:
 				for item in _list:
-					count += 1
+					
 					index = _list.index(item)
 					
 					try:
@@ -48,18 +48,19 @@ def sort(_list):
 							continue
 					
 						else:
+							count += 1
 							_list[index], _list[index + 1] = _list[index + 1], _list[index]
 					
 					except IndexError:
 						list_change[0] = _list
-						print(f"Step {int(count/10)}: {list_change[0]}")
+						print(f"Step {int(count)}: {list_change[0]}")
 						res_fin = check_sort(_list)
 						if res_fin == True:
 							running = False
 			return f"\n\n{list_change[-1]} is the sorted list \n\n"
 
 
-sample_list = [1, 3, 4, 5, 9, 0, 12, 4, 5, 7]
+sample_list = [100, 200, 131, 146, 32, 78, 111]
 
 print(sort(sample_list))
 
