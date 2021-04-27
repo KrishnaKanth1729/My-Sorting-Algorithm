@@ -1,3 +1,3 @@
 # My-Sorting-Algorithm
 
-## An algorithm that i wrote :)
+## A list of algorithms i wrote
