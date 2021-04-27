@@ -1,9 +1,7 @@
 # Create a program to sort a list
-# Sample Input/Output :-
 
 # I: [1, 2, 5, 3, 10, 4]
 # O: [1, 2, 3, 4, 5, 10]
-
 
 def check_sort(_list):
 	'''Function to check if a list is sorted.
@@ -25,7 +23,6 @@ def check_sort(_list):
 		return False
 	else:
 		return True
-
 
 def sort(_list):
 	res = check_sort(_list)
@@ -59,8 +56,9 @@ def sort(_list):
 							running = False
 			return f"\n\n{list_change[-1]} is the sorted list \n\n"
 
-
-sample_list = [100, 200, 131, 146, 32, 78, 111]
-
+sample_list = [100, 200, 131, 146, 32, 78, 111, 3000, 1200, 34, 90, 56, 10000, 45]
 print(sort(sample_list))
+
+
+
 

@@ -12,7 +12,6 @@ func checkSort(array []int) bool {
 		iteration += 1
 		if array[i] <= array[i+1] {
 			count += 1
-
 		}
 	}
 	return count == len(array)-1
@@ -52,6 +51,6 @@ func sort(nums []int) []int {
 }
 
 func main() {
-	var sample_array []int = []int{2, 3, 4, 1}
+	var sample_array []int = []int{5, 6, 78, 12, 30, 67, 43, 21}
 	fmt.Println(sort(sample_array))
 }
